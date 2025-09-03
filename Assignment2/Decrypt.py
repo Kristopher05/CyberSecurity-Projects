@@ -1,6 +1,9 @@
+# Method to count the amount of each letter in the ciphertext
 def letter_count(ciphertext):
+    # Array that holds the count of each letter
     counts = {}
-
+    
+    # Loops through each character in the ciphertext and updates the count
     for char in ciphertext:
         if char.isalpha():
             char = char.lower()
